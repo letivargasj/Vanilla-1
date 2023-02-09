@@ -8,7 +8,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
 <body>
-
+    <div class="container">
+        <h4 class="text-center">Carrito de compras</h4>
+            <div class="cotenido">
+                <div class="compras">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Acciones</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items"></tbody>
+                        <tfoot>
+                            <tr id="footer">
+                                <!--tr un solo renglon y colspan agrupa las columnas-->
+                                <th scope="row" colspan="5">
+                                    Carrito Vacio- Compra YA!
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="productos">
+                        <h4 class="text-center">Productos</h4>
+                        <div class="row" id="cards"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
     <!--archivo de java-->
     <script src="./js/app.js"></script>
 </body>
